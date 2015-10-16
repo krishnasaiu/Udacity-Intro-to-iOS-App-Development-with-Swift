@@ -114,6 +114,14 @@
                                     <action selector="playSlowAudio:" destination="BMC-Pi-E7j" eventType="touchUpInside" id="KdL-C1-lzc"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zQI-lW-afO">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <animations/>
+                                <state key="normal" image="FastSpeed"/>
+                                <connections>
+                                    <action selector="playFastAudio:" destination="BMC-Pi-E7j" eventType="touchUpInside" id="aKc-5p-oQd"/>
+                                </connections>
+                            </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hLL-mq-A8d">
                                 <rect key="frame" x="-23" y="-15" width="46" height="30"/>
                                 <animations/>
@@ -122,12 +130,20 @@
                                     <action selector="stopAudio:" destination="BMC-Pi-E7j" eventType="touchUpInside" id="kfq-07-3hc"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zQI-lW-afO">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="av8-nj-yVf">
                                 <rect key="frame" x="-23" y="-15" width="46" height="30"/>
                                 <animations/>
-                                <state key="normal" image="FastSpeed"/>
+                                <state key="normal" image="Chipmunk"/>
                                 <connections>
-                                    <action selector="playFastAudio:" destination="BMC-Pi-E7j" eventType="touchUpInside" id="aKc-5p-oQd"/>
+                                    <action selector="playChipmunkAudio:" destination="BMC-Pi-E7j" eventType="touchUpInside" id="Fd6-sd-YwE"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kfU-3H-kRD">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <animations/>
+                                <state key="normal" image="DarthVader"/>
+                                <connections>
+                                    <action selector="playDarthvaderAudio:" destination="BMC-Pi-E7j" eventType="touchUpInside" id="4Ja-lm-Gzz"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -137,21 +153,31 @@
                             <constraint firstItem="hLL-mq-A8d" firstAttribute="centerX" secondItem="bx6-65-oSU" secondAttribute="centerX" id="1Pj-wm-EQv"/>
                             <constraint firstAttribute="trailingMargin" secondItem="zQI-lW-afO" secondAttribute="trailing" constant="30" id="KaW-X4-P2c"/>
                             <constraint firstItem="F2j-EO-Y3l" firstAttribute="top" secondItem="HJJ-IQ-LVS" secondAttribute="bottom" constant="50" id="d4x-Sf-M7L"/>
+                            <constraint firstItem="av8-nj-yVf" firstAttribute="leading" secondItem="bx6-65-oSU" secondAttribute="leadingMargin" constant="30" id="h7R-uW-RO4"/>
+                            <constraint firstItem="av8-nj-yVf" firstAttribute="top" secondItem="F2j-EO-Y3l" secondAttribute="bottom" constant="36" id="ljK-bi-HDo"/>
                             <constraint firstItem="hOy-Ev-rXh" firstAttribute="top" secondItem="hLL-mq-A8d" secondAttribute="bottom" constant="71" id="pa9-xO-YM7"/>
                             <constraint firstItem="F2j-EO-Y3l" firstAttribute="leading" secondItem="bx6-65-oSU" secondAttribute="leadingMargin" constant="30" id="rg4-DV-rbo"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="kfU-3H-kRD" secondAttribute="trailing" constant="30" id="xHu-r5-dlv"/>
+                            <constraint firstItem="kfU-3H-kRD" firstAttribute="top" secondItem="zQI-lW-afO" secondAttribute="bottom" constant="36" id="xQZ-Oc-hEV"/>
                             <constraint firstItem="zQI-lW-afO" firstAttribute="top" secondItem="HJJ-IQ-LVS" secondAttribute="bottom" constant="50" id="xwu-px-kyl"/>
                         </constraints>
                         <variation key="default">
                             <mask key="subviews">
                                 <exclude reference="F2j-EO-Y3l"/>
-                                <exclude reference="hLL-mq-A8d"/>
                                 <exclude reference="zQI-lW-afO"/>
+                                <exclude reference="hLL-mq-A8d"/>
+                                <exclude reference="av8-nj-yVf"/>
+                                <exclude reference="kfU-3H-kRD"/>
                             </mask>
                             <mask key="constraints">
                                 <exclude reference="d4x-Sf-M7L"/>
                                 <exclude reference="rg4-DV-rbo"/>
+                                <exclude reference="h7R-uW-RO4"/>
+                                <exclude reference="ljK-bi-HDo"/>
                                 <exclude reference="KaW-X4-P2c"/>
                                 <exclude reference="xwu-px-kyl"/>
+                                <exclude reference="xHu-r5-dlv"/>
+                                <exclude reference="xQZ-Oc-hEV"/>
                                 <exclude reference="1Pj-wm-EQv"/>
                                 <exclude reference="pa9-xO-YM7"/>
                             </mask>
@@ -159,14 +185,20 @@
                         <variation key="widthClass=compact">
                             <mask key="subviews">
                                 <include reference="F2j-EO-Y3l"/>
-                                <include reference="hLL-mq-A8d"/>
                                 <include reference="zQI-lW-afO"/>
+                                <include reference="hLL-mq-A8d"/>
+                                <include reference="av8-nj-yVf"/>
+                                <include reference="kfU-3H-kRD"/>
                             </mask>
                             <mask key="constraints">
                                 <include reference="d4x-Sf-M7L"/>
                                 <include reference="rg4-DV-rbo"/>
+                                <include reference="h7R-uW-RO4"/>
+                                <include reference="ljK-bi-HDo"/>
                                 <include reference="KaW-X4-P2c"/>
                                 <include reference="xwu-px-kyl"/>
+                                <include reference="xHu-r5-dlv"/>
+                                <include reference="xQZ-Oc-hEV"/>
                                 <include reference="1Pj-wm-EQv"/>
                                 <include reference="pa9-xO-YM7"/>
                             </mask>
@@ -198,6 +230,8 @@
         </scene>
     </scenes>
     <resources>
+        <image name="Chipmunk" width="100" height="100"/>
+        <image name="DarthVader" width="100" height="100"/>
         <image name="FastSpeed" width="100" height="100"/>
         <image name="Microphone" width="100" height="100"/>
         <image name="SlowSpeed" width="100" height="100"/>
