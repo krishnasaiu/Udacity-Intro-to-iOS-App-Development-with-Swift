@@ -8,7 +8,7 @@
         <!--Record-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Pitch_Perfect" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="RecordSoundsViewController" customModule="Pitch_Perfect" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -38,7 +38,6 @@
                                 <state key="normal" image="Stop"/>
                                 <connections>
                                     <action selector="stopRecording:" destination="BYZ-38-t0r" eventType="touchUpInside" id="KfH-eo-njT"/>
-                                    <segue destination="BMC-Pi-E7j" kind="show" id="9IY-cG-cga"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -88,16 +87,17 @@
                         <outlet property="recordButton" destination="dhR-4K-aPk" id="jkU-Qe-tBr"/>
                         <outlet property="recordingInProgress" destination="5Am-qr-oAk" id="EdP-18-g1m"/>
                         <outlet property="stopButton" destination="7Ib-Qp-ypC" id="vu5-th-z9k"/>
+                        <segue destination="BMC-Pi-E7j" kind="show" identifier="stopRecording" id="H5s-ws-EGB"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1222.5" y="349"/>
         </scene>
-        <!--Play Sound View Controller-->
+        <!--Play Sounds View Controller-->
         <scene sceneID="hqh-qt-ded">
             <objects>
-                <viewController id="BMC-Pi-E7j" customClass="PlaySoundViewController" customModule="Pitch_Perfect" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BMC-Pi-E7j" customClass="PlaySoundsViewController" customModule="Pitch_Perfect" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="HJJ-IQ-LVS"/>
                         <viewControllerLayoutGuide type="bottom" id="hOy-Ev-rXh"/>
