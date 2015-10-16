@@ -31,11 +31,10 @@ class RecordSoundsViewController: UIViewController, AVAudioRecorderDelegate {
     override func viewWillAppear(animated: Bool) {
         stopButton.hidden = true;
         recordButton.enabled = true;
-        recordingInProgress.text = "Tap to record"
     }
 
     @IBAction func recordAudio(sender: UIButton) {
-        recordingInProgress.text = "Recording"
+        recordingInProgress.hidden = false;
         stopButton.hidden = false;
         recordButton.enabled = false;
         
@@ -73,6 +72,8 @@ class RecordSoundsViewController: UIViewController, AVAudioRecorderDelegate {
     }
 
     @IBAction func stopRecording(sender: UIButton) {
+        recordingInProgress.hidden = true;
+        
         audioRecorder.stop()
         let audioSession = AVAudioSession.sharedInstance()
         try! audioSession.setActive(false)
