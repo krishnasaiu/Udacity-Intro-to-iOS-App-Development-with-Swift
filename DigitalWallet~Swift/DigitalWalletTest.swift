@@ -1,3 +1,60 @@
+import Foundation
+
+class Transaction {
+    private var payee: String
+    private var date: NSDate
+    private var amount: Double
+    private var success: Bool
+    
+    init(payee: String, date: NSDate, amount: Double){
+        self.payee = payee
+        self.date = date
+        self.amount = amount
+        success = false
+    }
+    
+    func setsuccess(success: Bool){
+        self.success = success
+    }
+};
+
+class DigitalWallet{
+    private var walletName: String
+    private var balance: Double
+    private var transactions: [Transaction]
+    
+    init(walletName: String) {
+        self.walletName = walletName
+        balance = 0
+        transactions = [Transaction]()
+    }
+    
+    func addMoney(money: Double) -> Bool {
+        if(money >= 0 && money <= 5000){
+            balance += money
+            return true
+        }
+        return false
+    }
+    
+    func getBalance() -> Double {
+        return balance
+    }
+    
+    func pay(payee: String, date: NSDate, amount: Double) -> Bool {
+        let t = Transaction(payee: payee, date: date, amount: amount)
+        if (balance >= amount){
+            balance -= amount
+            balance += (floor(amount/100))*10
+            t.setsuccess(true)
+            transactions.append(t)
+            return true
+        }
+        transactions.append(t)
+        return false
+    }
+};
+
 /**
  * A digital wallet is a software application that allows
  * an individual to make online payments.
@@ -43,8 +100,8 @@ print("Expected: 1000 - Actual: \(availableBalance)")
  *  Pay a merchant from wallet
  *  Don't approve transaction if balance is less than amount
  */
-var txtDate = NSDate()
-flag = wallet.pay("Airtel", txDate, 455)
+var txDate = NSDate()
+flag = wallet.pay("Airtel", date: txDate, amount: 455)
 if(flag)
 {
     print("Transaction Approved")
@@ -64,10 +121,10 @@ else
 */
 availableBalance = wallet.getBalance();
 print("You have \(availableBalance) in your wallet")
-print("Expected: 585 - Actual: \(availableBalance)")
+print("Expected: 585.0 - Actual: \(availableBalance)")
 
 txDate = NSDate();
-flag = wallet.pay("Uber", txDate, 280.50);
+flag = wallet.pay("Uber", date: txDate, amount: 280.50);
 if(flag)
 {
     print("Transaction Approved")
@@ -87,11 +144,11 @@ else
 */
 availableBalance = wallet.getBalance();
 print("You have \(availableBalance) in your wallet")
-print("Expected: 324.50 - Actual: \(availableBalance)")
+print("Expected: 324.5 - Actual: \(availableBalance)")
 
 txDate = NSDate()
-flag = wallet.pay("Cream Stone", txDate, 680)
-if(flag)
+flag = wallet.pay("Cream Stone", date: txDate, amount: 680)
+if(!flag)
 {
     print("Transaction Approved")
     print("Testcase Passed!")
@@ -110,11 +167,7 @@ else
 */
 availableBalance = wallet.getBalance();
 print("You have \(availableBalance) in your wallet")
-print("Expected: 324.50 - Actual: \(availableBalance)")
-
-wallet.addMoney(500);
-print("You have \(availableBalance) in your wallet")
-print("Expected: 324.50 - Actual: \(availableBalance)")
+print("Expected: 324.5 - Actual: \(availableBalance)")
 
 wallet.addMoney(500)
 /*
@@ -122,12 +175,12 @@ wallet.addMoney(500)
 *  Prev balance = 324.50
 *  Add 500, so balance + deposit = 324.50 + 500 = 824.50
 */
-vailableBalance = wallet.getBalance()
+availableBalance = wallet.getBalance()
 print("You have \(availableBalance) in your wallet")
-print("Expected: 824.50 - Actual: \(availableBalance)")
+print("Expected: 824.5 - Actual: \(availableBalance)")
 
 txDate = NSDate();
-flag = wallet.pay("Cream Stone", txDate, 680);
+flag = wallet.pay("Cream Stone", date: txDate, amount: 680);
 if(flag)
 {
     print("Transaction Approved")
@@ -147,10 +200,10 @@ else
 */
 availableBalance = wallet.getBalance();
 print("You have \(availableBalance) in your wallet")
-print("Expected: 824.50 - Actual: \(availableBalance)")
+print("Expected: 204.5 - Actual: \(availableBalance)")
 
 /*
 * Expected Output:
 
 */
-wallet.getStatement();
+//wallet.getStatement();
