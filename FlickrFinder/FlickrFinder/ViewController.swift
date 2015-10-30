@@ -18,6 +18,8 @@ class ViewController: UIViewController {
     let EXTRAS = "url_m"
     let DATA_FORMAT = "json"
     let NO_JSON_CALLBACK = "1"
+    
+    var tapRecognizer: UITapGestureRecognizer? = nil
 
     @IBOutlet weak var imageView: UIImageView!
     
@@ -39,6 +41,56 @@ class ViewController: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
+    
+    // MARK: Show/Hide Keyboard
+    
+    func addKeyboardDismissRecognizer() {
+        self.view.addGestureRecognizer(tapRecognizer!)
+    }
+    
+    func removeKeyboardDismissRecognizer() {
+        self.view.removeGestureRecognizer(tapRecognizer!)
+    }
+    
+    func handleSingleTap(recognizer: UITapGestureRecognizer) {
+        self.view.endEditing(true)
+    }
+    
+    func subscribeToKeyboardNotifications() {
+        NSNotificationCenter.defaultCenter().addObserver(self, selector: "keyboardWillShow:", name: UIKeyboardWillShowNotification, object: nil)
+        NSNotificationCenter.defaultCenter().addObserver(self, selector: "keyboardWillHide:", name: UIKeyboardWillHideNotification, object: nil)
+    }
+    
+    func unsubscribeToKeyboardNotifications() {
+        NSNotificationCenter.defaultCenter().removeObserver(self, name: UIKeyboardWillShowNotification, object: nil)
+    }
+    
+    func keyboardWillShow(notification: NSNotification) {
+        if self.imageView.image != nil {
+            //self.defaultLabel.alpha = 0.0
+        }
+        if self.view.frame.origin.y == 0.0 {
+            self.view.frame.origin.y -= self.getKeyboardHeight(notification) / 2
+        }
+    }
+    
+    func keyboardWillHide(notification: NSNotification) {
+        if self.imageView.image == nil {
+            //self.defaultLabel.alpha = 1.0
+        }
+        if self.view.frame.origin.y != 0.0 {
+            self.view.frame.origin.y += self.getKeyboardHeight(notification) / 2
+        }
+    }
+    
+    func getKeyboardHeight(notification: NSNotification) -> CGFloat {
+        let userInfo = notification.userInfo
+        let keyboardSize = userInfo![UIKeyboardFrameEndUserInfoKey] as! NSValue // of CGRect
+        return keyboardSize.CGRectValue().height
+    }
+    
+    
+    
 
     @IBAction func searchPhotosByPhrase(sender: UIButton) {
         
@@ -142,9 +194,17 @@ class ViewController: UIViewController {
                 /* 6 - Update the UI on the main thread */
                 if let imageData = NSData(contentsOfURL: imageURL!) {
                     dispatch_async(dispatch_get_main_queue(), {
-                        print("Success, update the UI here...")
+                        //print("Success, update the UI here...")
                         print(photoTitle)
-                        print(imageData)
+                        self.imageNameLabel.contentMode = UIViewContentMode.ScaleAspectFit
+                        self.imageNameLabel.text = photoTitle
+                        self.imageNameLabel.autoresizesSubviews = true
+                        
+                        //self.imageNameLabel.numberOfLines = 0
+                        //self.imageNameLabel.sizeToFit()
+                        
+                        self.imageView.contentMode = UIViewContentMode.ScaleAspectFit
+                        self.imageView.image = UIImage(data: imageData)
                     })
                 } else {
                     print("Image does not exist at \(imageURL)")
@@ -152,6 +212,8 @@ class ViewController: UIViewController {
             } else {
                 dispatch_async(dispatch_get_main_queue(), {
                     print("No Photos Found. Search Again.")
+                    self.imageNameLabel.text = "No Photos Found"
+                    self.imageView.image = nil;
                 })
             }
         }
