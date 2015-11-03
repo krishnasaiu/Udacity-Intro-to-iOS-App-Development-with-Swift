@@ -20,10 +20,6 @@ class PlaySoundsViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
         
-        //let filepath = NSBundle.mainBundle().pathForResource("movie_quote", ofType: "mp3")
-        //print(filepath)
-        //let filePathUrl = NSURL.fileURLWithPath(filepath!)
-        
         try! audioPlayer = AVAudioPlayer(contentsOfURL: receivedAudio.filePathUrl)
         audioPlayer.enableRate = true
         
