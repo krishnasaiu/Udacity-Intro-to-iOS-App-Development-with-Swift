@@ -10,6 +10,9 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    @IBOutlet weak var input: UITextField!
+    @IBOutlet weak var image: UIImageView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
@@ -21,5 +24,16 @@ class ViewController: UIViewController {
     }
 
 
+    @IBAction func guess(sender: AnyObject) {
+        let randomNumber = String(arc4random_uniform(6))
+        
+        if  input.text! == randomNumber {
+            image.image = UIImage(named: "ThumbsUp")
+        } else {
+            image.image = UIImage(named: "ThumbsDown")
+        }
+        
+        input.text = ""
+    }
 }
 

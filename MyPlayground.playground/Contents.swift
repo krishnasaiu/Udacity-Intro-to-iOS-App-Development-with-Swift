@@ -65,3 +65,46 @@ if uname == "krishna" && pass == "password" {
         print("password is wrong")
     }
 }
+
+for var i = 2; i <= 20; i += 2 {
+    print(i)
+}
+
+var arr:[Int] = [2, 4, 6, 8, 10]
+
+for var index = 0; index < arr.count; index++ {
+    arr[index] /= 2
+}
+
+print(arr)
+
+var i = 0
+
+while i++ < 10 {
+    print(i * 5)
+}
+
+arr = [1, 2, 3, 4, 5, 6 ,7]
+
+i = 0
+while i < arr.count {
+    arr[i++]--
+}
+
+print(arr)
+
+func isPrime(n: Double) -> Bool {
+    if n == 1 || n == 0{
+            return false
+    }
+    for var i:Double = 2; i <= sqrt(n); i++ {
+        if n % i == 0 {
+            return false
+        }
+    }
+    return true
+}
+
+print(isPrime(1))
+
+
