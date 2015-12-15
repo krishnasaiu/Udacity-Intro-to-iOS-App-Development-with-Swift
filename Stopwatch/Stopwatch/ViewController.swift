@@ -19,7 +19,7 @@ class ViewController: UIViewController {
     
     func result() {
         secs++
-        if secs == 6 {
+        if secs == 60 {
             secs = 0
             mins++
             if mins == 60 {
