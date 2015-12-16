@@ -1,0 +1,508 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		FAE3D54F1C21D2B50035C641 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAE3D54E1C21D2B50035C641 /* AppDelegate.swift */; };
+		FAE3D5511C21D2B50035C641 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAE3D5501C21D2B50035C641 /* ViewController.swift */; };
+		FAE3D5541C21D2B50035C641 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FAE3D5521C21D2B50035C641 /* Main.storyboard */; };
+		FAE3D5561C21D2B50035C641 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FAE3D5551C21D2B50035C641 /* Assets.xcassets */; };
+		FAE3D5591C21D2B50035C641 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FAE3D5571C21D2B50035C641 /* LaunchScreen.storyboard */; };
+		FAE3D5641C21D2B50035C641 /* Seques_ExampleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAE3D5631C21D2B50035C641 /* Seques_ExampleTests.swift */; };
+		FAE3D56F1C21D2B50035C641 /* Seques_ExampleUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAE3D56E1C21D2B50035C641 /* Seques_ExampleUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		FAE3D5601C21D2B50035C641 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FAE3D5431C21D2B40035C641 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FAE3D54A1C21D2B50035C641;
+			remoteInfo = "Seques Example";
+		};
+		FAE3D56B1C21D2B50035C641 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FAE3D5431C21D2B40035C641 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FAE3D54A1C21D2B50035C641;
+			remoteInfo = "Seques Example";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		FAE3D54B1C21D2B50035C641 /* Seques Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Seques Example.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		FAE3D54E1C21D2B50035C641 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		FAE3D5501C21D2B50035C641 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		FAE3D5531C21D2B50035C641 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		FAE3D5551C21D2B50035C641 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		FAE3D5581C21D2B50035C641 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		FAE3D55A1C21D2B50035C641 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FAE3D55F1C21D2B50035C641 /* Seques ExampleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Seques ExampleTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		FAE3D5631C21D2B50035C641 /* Seques_ExampleTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Seques_ExampleTests.swift; sourceTree = "<group>"; };
+		FAE3D5651C21D2B50035C641 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FAE3D56A1C21D2B50035C641 /* Seques ExampleUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Seques ExampleUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		FAE3D56E1C21D2B50035C641 /* Seques_ExampleUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Seques_ExampleUITests.swift; sourceTree = "<group>"; };
+		FAE3D5701C21D2B50035C641 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		FAE3D5481C21D2B50035C641 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FAE3D55C1C21D2B50035C641 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FAE3D5671C21D2B50035C641 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		FAE3D5421C21D2B40035C641 = {
+			isa = PBXGroup;
+			children = (
+				FAE3D54D1C21D2B50035C641 /* Seques Example */,
+				FAE3D5621C21D2B50035C641 /* Seques ExampleTests */,
+				FAE3D56D1C21D2B50035C641 /* Seques ExampleUITests */,
+				FAE3D54C1C21D2B50035C641 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		FAE3D54C1C21D2B50035C641 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FAE3D54B1C21D2B50035C641 /* Seques Example.app */,
+				FAE3D55F1C21D2B50035C641 /* Seques ExampleTests.xctest */,
+				FAE3D56A1C21D2B50035C641 /* Seques ExampleUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FAE3D54D1C21D2B50035C641 /* Seques Example */ = {
+			isa = PBXGroup;
+			children = (
+				FAE3D54E1C21D2B50035C641 /* AppDelegate.swift */,
+				FAE3D5501C21D2B50035C641 /* ViewController.swift */,
+				FAE3D5521C21D2B50035C641 /* Main.storyboard */,
+				FAE3D5551C21D2B50035C641 /* Assets.xcassets */,
+				FAE3D5571C21D2B50035C641 /* LaunchScreen.storyboard */,
+				FAE3D55A1C21D2B50035C641 /* Info.plist */,
+			);
+			path = "Seques Example";
+			sourceTree = "<group>";
+		};
+		FAE3D5621C21D2B50035C641 /* Seques ExampleTests */ = {
+			isa = PBXGroup;
+			children = (
+				FAE3D5631C21D2B50035C641 /* Seques_ExampleTests.swift */,
+				FAE3D5651C21D2B50035C641 /* Info.plist */,
+			);
+			path = "Seques ExampleTests";
+			sourceTree = "<group>";
+		};
+		FAE3D56D1C21D2B50035C641 /* Seques ExampleUITests */ = {
+			isa = PBXGroup;
+			children = (
+				FAE3D56E1C21D2B50035C641 /* Seques_ExampleUITests.swift */,
+				FAE3D5701C21D2B50035C641 /* Info.plist */,
+			);
+			path = "Seques ExampleUITests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		FAE3D54A1C21D2B50035C641 /* Seques Example */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FAE3D5731C21D2B50035C641 /* Build configuration list for PBXNativeTarget "Seques Example" */;
+			buildPhases = (
+				FAE3D5471C21D2B50035C641 /* Sources */,
+				FAE3D5481C21D2B50035C641 /* Frameworks */,
+				FAE3D5491C21D2B50035C641 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Seques Example";
+			productName = "Seques Example";
+			productReference = FAE3D54B1C21D2B50035C641 /* Seques Example.app */;
+			productType = "com.apple.product-type.application";
+		};
+		FAE3D55E1C21D2B50035C641 /* Seques ExampleTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FAE3D5761C21D2B50035C641 /* Build configuration list for PBXNativeTarget "Seques ExampleTests" */;
+			buildPhases = (
+				FAE3D55B1C21D2B50035C641 /* Sources */,
+				FAE3D55C1C21D2B50035C641 /* Frameworks */,
+				FAE3D55D1C21D2B50035C641 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FAE3D5611C21D2B50035C641 /* PBXTargetDependency */,
+			);
+			name = "Seques ExampleTests";
+			productName = "Seques ExampleTests";
+			productReference = FAE3D55F1C21D2B50035C641 /* Seques ExampleTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		FAE3D5691C21D2B50035C641 /* Seques ExampleUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FAE3D5791C21D2B50035C641 /* Build configuration list for PBXNativeTarget "Seques ExampleUITests" */;
+			buildPhases = (
+				FAE3D5661C21D2B50035C641 /* Sources */,
+				FAE3D5671C21D2B50035C641 /* Frameworks */,
+				FAE3D5681C21D2B50035C641 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FAE3D56C1C21D2B50035C641 /* PBXTargetDependency */,
+			);
+			name = "Seques ExampleUITests";
+			productName = "Seques ExampleUITests";
+			productReference = FAE3D56A1C21D2B50035C641 /* Seques ExampleUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		FAE3D5431C21D2B40035C641 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0720;
+				LastUpgradeCheck = 0720;
+				ORGANIZATIONNAME = "Krishna Sai";
+				TargetAttributes = {
+					FAE3D54A1C21D2B50035C641 = {
+						CreatedOnToolsVersion = 7.2;
+						DevelopmentTeam = J33S39998U;
+					};
+					FAE3D55E1C21D2B50035C641 = {
+						CreatedOnToolsVersion = 7.2;
+						DevelopmentTeam = J33S39998U;
+						TestTargetID = FAE3D54A1C21D2B50035C641;
+					};
+					FAE3D5691C21D2B50035C641 = {
+						CreatedOnToolsVersion = 7.2;
+						DevelopmentTeam = J33S39998U;
+						TestTargetID = FAE3D54A1C21D2B50035C641;
+					};
+				};
+			};
+			buildConfigurationList = FAE3D5461C21D2B40035C641 /* Build configuration list for PBXProject "Seques Example" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = FAE3D5421C21D2B40035C641;
+			productRefGroup = FAE3D54C1C21D2B50035C641 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				FAE3D54A1C21D2B50035C641 /* Seques Example */,
+				FAE3D55E1C21D2B50035C641 /* Seques ExampleTests */,
+				FAE3D5691C21D2B50035C641 /* Seques ExampleUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		FAE3D5491C21D2B50035C641 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FAE3D5591C21D2B50035C641 /* LaunchScreen.storyboard in Resources */,
+				FAE3D5561C21D2B50035C641 /* Assets.xcassets in Resources */,
+				FAE3D5541C21D2B50035C641 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FAE3D55D1C21D2B50035C641 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FAE3D5681C21D2B50035C641 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		FAE3D5471C21D2B50035C641 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FAE3D5511C21D2B50035C641 /* ViewController.swift in Sources */,
+				FAE3D54F1C21D2B50035C641 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FAE3D55B1C21D2B50035C641 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FAE3D5641C21D2B50035C641 /* Seques_ExampleTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FAE3D5661C21D2B50035C641 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FAE3D56F1C21D2B50035C641 /* Seques_ExampleUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		FAE3D5611C21D2B50035C641 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FAE3D54A1C21D2B50035C641 /* Seques Example */;
+			targetProxy = FAE3D5601C21D2B50035C641 /* PBXContainerItemProxy */;
+		};
+		FAE3D56C1C21D2B50035C641 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FAE3D54A1C21D2B50035C641 /* Seques Example */;
+			targetProxy = FAE3D56B1C21D2B50035C641 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		FAE3D5521C21D2B50035C641 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FAE3D5531C21D2B50035C641 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		FAE3D5571C21D2B50035C641 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FAE3D5581C21D2B50035C641 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		FAE3D5711C21D2B50035C641 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		FAE3D5721C21D2B50035C641 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		FAE3D5741C21D2B50035C641 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "Seques Example/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.krishnasai.Seques-Example";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		FAE3D5751C21D2B50035C641 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "Seques Example/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.krishnasai.Seques-Example";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		FAE3D5771C21D2B50035C641 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = "Seques ExampleTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.krishnasai.Seques-ExampleTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Seques Example.app/Seques Example";
+			};
+			name = Debug;
+		};
+		FAE3D5781C21D2B50035C641 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = "Seques ExampleTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.krishnasai.Seques-ExampleTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Seques Example.app/Seques Example";
+			};
+			name = Release;
+		};
+		FAE3D57A1C21D2B50035C641 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "Seques ExampleUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.krishnasai.Seques-ExampleUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = "Seques Example";
+				USES_XCTRUNNER = YES;
+			};
+			name = Debug;
+		};
+		FAE3D57B1C21D2B50035C641 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "Seques ExampleUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.krishnasai.Seques-ExampleUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = "Seques Example";
+				USES_XCTRUNNER = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		FAE3D5461C21D2B40035C641 /* Build configuration list for PBXProject "Seques Example" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FAE3D5711C21D2B50035C641 /* Debug */,
+				FAE3D5721C21D2B50035C641 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FAE3D5731C21D2B50035C641 /* Build configuration list for PBXNativeTarget "Seques Example" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FAE3D5741C21D2B50035C641 /* Debug */,
+				FAE3D5751C21D2B50035C641 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		FAE3D5761C21D2B50035C641 /* Build configuration list for PBXNativeTarget "Seques ExampleTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FAE3D5771C21D2B50035C641 /* Debug */,
+				FAE3D5781C21D2B50035C641 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		FAE3D5791C21D2B50035C641 /* Build configuration list for PBXNativeTarget "Seques ExampleUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FAE3D57A1C21D2B50035C641 /* Debug */,
+				FAE3D57B1C21D2B50035C641 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = FAE3D5431C21D2B40035C641 /* Project object */;
+}
