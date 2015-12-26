@@ -51,17 +51,20 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="1l2-MB-WnM">
-                                <rect key="frame" x="40" y="220" width="240" height="128"/>
+                                <rect key="frame" x="20" y="220" width="280" height="128"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="128" id="7yy-Sv-P9F"/>
-                                    <constraint firstAttribute="width" constant="240" id="PeO-mB-alb"/>
+                                    <constraint firstAttribute="width" constant="280" id="zWp-Tz-rqq"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
+                            <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" hidesWhenStopped="YES" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="izl-CH-EE9">
+                                <rect key="frame" x="150" y="274" width="20" height="20"/>
+                            </activityIndicatorView>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="0.90196079019999997" green="0.90196079019999997" blue="0.90196079019999997" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstAttribute="trailingMargin" secondItem="SRH-o1-wQc" secondAttribute="trailing" constant="56" id="9ih-qZ-HXa"/>
                             <constraint firstItem="1l2-MB-WnM" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="D9A-38-CZc"/>
@@ -81,6 +84,7 @@
                     <connections>
                         <outlet property="city" destination="3qp-rZ-x8M" id="UHy-Q7-aSP"/>
                         <outlet property="errormsg" destination="SRH-o1-wQc" id="zPg-uy-q9E"/>
+                        <outlet property="retrievingData" destination="izl-CH-EE9" id="cSV-Sl-rct"/>
                         <outlet property="weather" destination="1l2-MB-WnM" id="Qyp-Z5-4F2"/>
                     </connections>
                 </viewController>
