@@ -1,0 +1,515 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		FAB31CA91C34EF7400D83557 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAB31CA81C34EF7400D83557 /* AppDelegate.swift */; };
+		FAB31CAB1C34EF7400D83557 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAB31CAA1C34EF7400D83557 /* ViewController.swift */; };
+		FAB31CAE1C34EF7400D83557 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FAB31CAC1C34EF7400D83557 /* Main.storyboard */; };
+		FAB31CB01C34EF7400D83557 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FAB31CAF1C34EF7400D83557 /* Assets.xcassets */; };
+		FAB31CB31C34EF7400D83557 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FAB31CB11C34EF7400D83557 /* LaunchScreen.storyboard */; };
+		FAB31CBE1C34EF7400D83557 /* Memorable_PlacesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAB31CBD1C34EF7400D83557 /* Memorable_PlacesTests.swift */; };
+		FAB31CC91C34EF7400D83557 /* Memorable_PlacesUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAB31CC81C34EF7400D83557 /* Memorable_PlacesUITests.swift */; };
+		FAE517AA1C3A351F004D544D /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAE517A91C3A351F004D544D /* TableViewController.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		FAB31CBA1C34EF7400D83557 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FAB31C9D1C34EF7400D83557 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FAB31CA41C34EF7400D83557;
+			remoteInfo = "Memorable Places";
+		};
+		FAB31CC51C34EF7400D83557 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FAB31C9D1C34EF7400D83557 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FAB31CA41C34EF7400D83557;
+			remoteInfo = "Memorable Places";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		FAB31CA51C34EF7400D83557 /* Memorable Places.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Memorable Places.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		FAB31CA81C34EF7400D83557 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		FAB31CAA1C34EF7400D83557 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; usesTabs = 1; };
+		FAB31CAD1C34EF7400D83557 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		FAB31CAF1C34EF7400D83557 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		FAB31CB21C34EF7400D83557 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		FAB31CB41C34EF7400D83557 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FAB31CB91C34EF7400D83557 /* Memorable PlacesTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Memorable PlacesTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		FAB31CBD1C34EF7400D83557 /* Memorable_PlacesTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Memorable_PlacesTests.swift; sourceTree = "<group>"; };
+		FAB31CBF1C34EF7400D83557 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FAB31CC41C34EF7400D83557 /* Memorable PlacesUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Memorable PlacesUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		FAB31CC81C34EF7400D83557 /* Memorable_PlacesUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Memorable_PlacesUITests.swift; sourceTree = "<group>"; };
+		FAB31CCA1C34EF7400D83557 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FAE517A91C3A351F004D544D /* TableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		FAB31CA21C34EF7400D83557 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FAB31CB61C34EF7400D83557 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FAB31CC11C34EF7400D83557 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		FAB31C9C1C34EF7400D83557 = {
+			isa = PBXGroup;
+			children = (
+				FAB31CA71C34EF7400D83557 /* Memorable Places */,
+				FAB31CBC1C34EF7400D83557 /* Memorable PlacesTests */,
+				FAB31CC71C34EF7400D83557 /* Memorable PlacesUITests */,
+				FAB31CA61C34EF7400D83557 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		FAB31CA61C34EF7400D83557 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FAB31CA51C34EF7400D83557 /* Memorable Places.app */,
+				FAB31CB91C34EF7400D83557 /* Memorable PlacesTests.xctest */,
+				FAB31CC41C34EF7400D83557 /* Memorable PlacesUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FAB31CA71C34EF7400D83557 /* Memorable Places */ = {
+			isa = PBXGroup;
+			children = (
+				FAB31CA81C34EF7400D83557 /* AppDelegate.swift */,
+				FAB31CAA1C34EF7400D83557 /* ViewController.swift */,
+				FAE517A91C3A351F004D544D /* TableViewController.swift */,
+				FAB31CAC1C34EF7400D83557 /* Main.storyboard */,
+				FAB31CAF1C34EF7400D83557 /* Assets.xcassets */,
+				FAB31CB11C34EF7400D83557 /* LaunchScreen.storyboard */,
+				FAB31CB41C34EF7400D83557 /* Info.plist */,
+			);
+			path = "Memorable Places";
+			sourceTree = "<group>";
+		};
+		FAB31CBC1C34EF7400D83557 /* Memorable PlacesTests */ = {
+			isa = PBXGroup;
+			children = (
+				FAB31CBD1C34EF7400D83557 /* Memorable_PlacesTests.swift */,
+				FAB31CBF1C34EF7400D83557 /* Info.plist */,
+			);
+			path = "Memorable PlacesTests";
+			sourceTree = "<group>";
+		};
+		FAB31CC71C34EF7400D83557 /* Memorable PlacesUITests */ = {
+			isa = PBXGroup;
+			children = (
+				FAB31CC81C34EF7400D83557 /* Memorable_PlacesUITests.swift */,
+				FAB31CCA1C34EF7400D83557 /* Info.plist */,
+			);
+			path = "Memorable PlacesUITests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		FAB31CA41C34EF7400D83557 /* Memorable Places */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FAB31CCD1C34EF7400D83557 /* Build configuration list for PBXNativeTarget "Memorable Places" */;
+			buildPhases = (
+				FAB31CA11C34EF7400D83557 /* Sources */,
+				FAB31CA21C34EF7400D83557 /* Frameworks */,
+				FAB31CA31C34EF7400D83557 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Memorable Places";
+			productName = "Memorable Places";
+			productReference = FAB31CA51C34EF7400D83557 /* Memorable Places.app */;
+			productType = "com.apple.product-type.application";
+		};
+		FAB31CB81C34EF7400D83557 /* Memorable PlacesTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FAB31CD01C34EF7400D83557 /* Build configuration list for PBXNativeTarget "Memorable PlacesTests" */;
+			buildPhases = (
+				FAB31CB51C34EF7400D83557 /* Sources */,
+				FAB31CB61C34EF7400D83557 /* Frameworks */,
+				FAB31CB71C34EF7400D83557 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FAB31CBB1C34EF7400D83557 /* PBXTargetDependency */,
+			);
+			name = "Memorable PlacesTests";
+			productName = "Memorable PlacesTests";
+			productReference = FAB31CB91C34EF7400D83557 /* Memorable PlacesTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		FAB31CC31C34EF7400D83557 /* Memorable PlacesUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FAB31CD31C34EF7400D83557 /* Build configuration list for PBXNativeTarget "Memorable PlacesUITests" */;
+			buildPhases = (
+				FAB31CC01C34EF7400D83557 /* Sources */,
+				FAB31CC11C34EF7400D83557 /* Frameworks */,
+				FAB31CC21C34EF7400D83557 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FAB31CC61C34EF7400D83557 /* PBXTargetDependency */,
+			);
+			name = "Memorable PlacesUITests";
+			productName = "Memorable PlacesUITests";
+			productReference = FAB31CC41C34EF7400D83557 /* Memorable PlacesUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		FAB31C9D1C34EF7400D83557 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0720;
+				LastUpgradeCheck = 0720;
+				ORGANIZATIONNAME = "Krishna Sai";
+				TargetAttributes = {
+					FAB31CA41C34EF7400D83557 = {
+						CreatedOnToolsVersion = 7.2;
+						DevelopmentTeam = J33S39998U;
+					};
+					FAB31CB81C34EF7400D83557 = {
+						CreatedOnToolsVersion = 7.2;
+						DevelopmentTeam = J33S39998U;
+						TestTargetID = FAB31CA41C34EF7400D83557;
+					};
+					FAB31CC31C34EF7400D83557 = {
+						CreatedOnToolsVersion = 7.2;
+						DevelopmentTeam = J33S39998U;
+						TestTargetID = FAB31CA41C34EF7400D83557;
+					};
+				};
+			};
+			buildConfigurationList = FAB31CA01C34EF7400D83557 /* Build configuration list for PBXProject "Memorable Places" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = FAB31C9C1C34EF7400D83557;
+			productRefGroup = FAB31CA61C34EF7400D83557 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				FAB31CA41C34EF7400D83557 /* Memorable Places */,
+				FAB31CB81C34EF7400D83557 /* Memorable PlacesTests */,
+				FAB31CC31C34EF7400D83557 /* Memorable PlacesUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		FAB31CA31C34EF7400D83557 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FAB31CB31C34EF7400D83557 /* LaunchScreen.storyboard in Resources */,
+				FAB31CB01C34EF7400D83557 /* Assets.xcassets in Resources */,
+				FAB31CAE1C34EF7400D83557 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FAB31CB71C34EF7400D83557 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FAB31CC21C34EF7400D83557 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		FAB31CA11C34EF7400D83557 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FAB31CAB1C34EF7400D83557 /* ViewController.swift in Sources */,
+				FAE517AA1C3A351F004D544D /* TableViewController.swift in Sources */,
+				FAB31CA91C34EF7400D83557 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FAB31CB51C34EF7400D83557 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FAB31CBE1C34EF7400D83557 /* Memorable_PlacesTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FAB31CC01C34EF7400D83557 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FAB31CC91C34EF7400D83557 /* Memorable_PlacesUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		FAB31CBB1C34EF7400D83557 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FAB31CA41C34EF7400D83557 /* Memorable Places */;
+			targetProxy = FAB31CBA1C34EF7400D83557 /* PBXContainerItemProxy */;
+		};
+		FAB31CC61C34EF7400D83557 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FAB31CA41C34EF7400D83557 /* Memorable Places */;
+			targetProxy = FAB31CC51C34EF7400D83557 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		FAB31CAC1C34EF7400D83557 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FAB31CAD1C34EF7400D83557 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		FAB31CB11C34EF7400D83557 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FAB31CB21C34EF7400D83557 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		FAB31CCB1C34EF7400D83557 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		FAB31CCC1C34EF7400D83557 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		FAB31CCE1C34EF7400D83557 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "Memorable Places/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.krishnasai.Memorable-Places";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		FAB31CCF1C34EF7400D83557 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "Memorable Places/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.krishnasai.Memorable-Places";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		FAB31CD11C34EF7400D83557 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = "Memorable PlacesTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.krishnasai.Memorable-PlacesTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Memorable Places.app/Memorable Places";
+			};
+			name = Debug;
+		};
+		FAB31CD21C34EF7400D83557 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = "Memorable PlacesTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.krishnasai.Memorable-PlacesTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Memorable Places.app/Memorable Places";
+			};
+			name = Release;
+		};
+		FAB31CD41C34EF7400D83557 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "Memorable PlacesUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.krishnasai.Memorable-PlacesUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = "Memorable Places";
+				USES_XCTRUNNER = YES;
+			};
+			name = Debug;
+		};
+		FAB31CD51C34EF7400D83557 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "Memorable PlacesUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.krishnasai.Memorable-PlacesUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = "Memorable Places";
+				USES_XCTRUNNER = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		FAB31CA01C34EF7400D83557 /* Build configuration list for PBXProject "Memorable Places" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FAB31CCB1C34EF7400D83557 /* Debug */,
+				FAB31CCC1C34EF7400D83557 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FAB31CCD1C34EF7400D83557 /* Build configuration list for PBXNativeTarget "Memorable Places" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FAB31CCE1C34EF7400D83557 /* Debug */,
+				FAB31CCF1C34EF7400D83557 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FAB31CD01C34EF7400D83557 /* Build configuration list for PBXNativeTarget "Memorable PlacesTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FAB31CD11C34EF7400D83557 /* Debug */,
+				FAB31CD21C34EF7400D83557 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FAB31CD31C34EF7400D83557 /* Build configuration list for PBXNativeTarget "Memorable PlacesUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FAB31CD41C34EF7400D83557 /* Debug */,
+				FAB31CD51C34EF7400D83557 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = FAB31C9D1C34EF7400D83557 /* Project object */;
+}

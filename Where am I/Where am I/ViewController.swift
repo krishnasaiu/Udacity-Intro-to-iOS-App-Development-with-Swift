@@ -44,15 +44,16 @@ class ViewController: UIViewController, CLLocationManagerDelegate, MKMapViewDele
         
         label.text = "\(userLocation.coordinate.latitude) \(userLocation.coordinate.longitude) \(userLocation.course) \(userLocation.speed) \(userLocation.altitude)"
         
-        CLGeocoder().reverseGeocodeLocation(userLocation) { (placemarks, error) -> Void in
-            if error != nil {
+        CLGeocoder().reverseGeocodeLocation(userLocation, completionHandler: {(placemarks, error) -> Void in
+            if (error != nil) {
                 print(error)
             } else {
-                if let p = CLPlacemark(placemark: placemarks![0]){
-                    print(p)
+                if placemarks!.count > 0 {
+                    let pl = CLPlacemark(placemark: placemarks![0])
+                    print(pl)
                 }
             }
-        }
+        })
     }
 
     override func didReceiveMemoryWarning() {
